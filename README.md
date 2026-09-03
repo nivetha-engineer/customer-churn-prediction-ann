@@ -260,7 +260,7 @@ customer-churn-prediction-ann/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/customer-churn-prediction-ann.git
+git clone https://github.com/nivetha-engineer/customer-churn-prediction-ann.git
 cd customer-churn-prediction-ann
 ```
 
@@ -308,11 +308,6 @@ The main libraries required are:
 
 See `requirements.txt` for the package list.
 
-## ⚠️ Important Note About the Prediction Threshold
-
-The notebook calculates an F1-score-based optimal threshold during evaluation. In the final new-customer prediction section, the example prediction uses a fixed threshold of `0.25`.
-
-For a production-ready implementation, save the selected threshold to a file and use that same saved threshold during future predictions. This keeps training/evaluation and inference consistent.
 
 ## 🚀 Possible Future Improvements
 
