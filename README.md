@@ -289,7 +289,7 @@ The application can also be deployed online using a Streamlit-compatible hosting
 
 After deployment, the repository can include a live application link:
 
-**Live Demo:** http://localhost:8501/
+**Live Demo:** (https://your-public-app.streamlit.app)
 
 ## 📁 Recommended Repository Structure
 
