@@ -230,6 +230,66 @@ The prediction provides:
 Churn Probability
 Customer Churn Status
 ```
+## 🌐 Streamlit Web Application
+
+This project includes an interactive **Streamlit web application** that allows users to enter customer information and calculate the customer's churn risk in real time.
+
+### Features
+
+* 👤 Customer demographic inputs
+* 📞 Service-related information
+* 💳 Account and billing information
+* 🔮 Churn probability prediction
+* 📊 Churn probability score
+* ⚠️ High churn alert
+* ✅ Safe/retained customer indication
+
+### Run the Streamlit App Locally
+
+After cloning the repository and installing the requirements:
+
+```bash
+streamlit run app.py
+```
+
+The application will open in your browser.
+
+### How the App Works
+
+```text
+User enters customer details
+        ↓
+Input DataFrame created
+        ↓
+Preprocessor transforms the data
+        ↓
+ANN model predicts churn probability
+        ↓
+Optimal threshold = 0.3022
+        ↓
+Churn / Retained prediction
+        ↓
+Risk displayed in Streamlit
+```
+
+### Prediction Threshold
+
+The Streamlit application uses an optimized classification threshold of **0.3022** for the final churn prediction.
+
+```python
+OPTIMAL_THRESHOLD = 0.3022
+prediction_class = 1 if predicted_prob > OPTIMAL_THRESHOLD else 0
+```
+
+This threshold was selected during model evaluation to improve the balance between precision and recall using the F1-score.
+
+### Streamlit Deployment
+
+The application can also be deployed online using a Streamlit-compatible hosting platform.
+
+After deployment, the repository can include a live application link:
+
+**Live Demo:** http://localhost:8501/
 
 ## 📁 Recommended Repository Structure
 
